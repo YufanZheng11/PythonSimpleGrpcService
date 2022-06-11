@@ -1,5 +1,23 @@
 # Simple Python gRPC Service
 
+## Proto Definition
+```
+syntax = "proto3";
+
+service PingPongService {
+  rpc ping (Ping) returns (Pong) {}
+}
+
+message Ping {
+  int32 count = 1;
+}
+
+message Pong {
+  int32 count = 1;
+}
+```
+
+
 ## How to run services
 
 ### Start Server
