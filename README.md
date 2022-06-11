@@ -1,6 +1,9 @@
 # Simple Python gRPC Service
 
 ## Proto Definition
+- Client send a count to server
+- Server increases the count by 1 and return count back
+- Client continue to send the received count to server
 ```
 syntax = "proto3";
 
@@ -18,7 +21,7 @@ message Pong {
 ```
 
 
-## How to run services
+## How to Run Services
 
 ### Start Server
 ```commandline
